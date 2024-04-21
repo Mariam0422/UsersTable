@@ -3,14 +3,14 @@ import { API_URL,table,btn,windowDiv,btnClosed,createBtn,firstNameInput,lastName
 
 btn.addEventListener("click", ((e) => {
   e.preventDefault();
-windowDiv.style.display = "block";
+windowDiv.classList.add("window_show");
 root.style.filter = 'blur(3px)'; 
 }));
 
 
 btnClosed.addEventListener("click", (e) => {
   e.preventDefault();
-  windowDiv.style.display = "none";
+  windowDiv.classList.remove("window_show");
   root.style.filter = "";
 });
 
